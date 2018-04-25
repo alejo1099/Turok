@@ -15,6 +15,7 @@ public class ControladorAnimaciones : MonoBehaviour
     private int tagAtacar = Animator.StringToHash("Atacando");
 
     private bool corriendo;
+    private float interX;
 
     private void Awake()
     {

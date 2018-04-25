@@ -48,6 +48,7 @@ namespace Emperor
         {
             x = Input.GetAxis("Horizontal");
             y = Input.GetAxis("Vertical");
+
             if (Input.GetKey(KeyCode.LeftShift))
                 controladorAnimaciones.CorrerPlayer(y);
             else
