@@ -24,7 +24,8 @@ public class Guerrero : MonoBehaviour
     private void Atacar()
     {
         if (Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.LeftControl))
-            CalcularMiradaEnemigo();
+            if (controladorAnimaciones.PoderAtacar())
+                CalcularMiradaEnemigo();
     }
 
     private void CalcularMiradaEnemigo()

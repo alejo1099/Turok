@@ -70,8 +70,8 @@ namespace Emperor
 
             transformCamara.localRotation *= Quaternion.Euler(Input.GetAxis("Mouse Y") * -velocidadRotacion, 0f, 0f);
 
-            velocidadRotacion = (transformCamara.localRotation.x >= 0.19 && Input.GetAxis("Mouse Y") < -0.1f)
-             || (transformCamara.localRotation.x <= -0.22 && Input.GetAxis("Mouse Y") > 0.1f) ? 0 : guardarvelocidadMovimiento;
+            velocidadRotacion = (transformCamara.localRotation.x >= 0.15f && Input.GetAxis("Mouse Y") < -0.1f)
+             || (transformCamara.localRotation.x <= -0.09f && Input.GetAxis("Mouse Y") > 0.1f) ? 0 : guardarvelocidadMovimiento;
         }
 
         private void Saltar()

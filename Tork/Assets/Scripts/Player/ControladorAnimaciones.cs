@@ -12,6 +12,7 @@ public class ControladorAnimaciones : MonoBehaviour
     private int correr = Animator.StringToHash("Correr");
 
     private int tagMover = Animator.StringToHash("Movimiento");
+    private int tagAtacar = Animator.StringToHash("Atacando");
 
     private bool corriendo;
 
@@ -24,6 +25,15 @@ public class ControladorAnimaciones : MonoBehaviour
     {
         animatorState = animator.GetCurrentAnimatorStateInfo(0);
         if (animatorState.tagHash == tagMover)
+            return true;
+        else
+            return false;
+    }
+
+    public bool PoderAtacar()
+    {
+        animatorState = animator.GetCurrentAnimatorStateInfo(0);
+        if (animatorState.tagHash != tagAtacar)
             return true;
         else
             return false;
