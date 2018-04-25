@@ -26,12 +26,12 @@ public class MovimientoDinosaurio : MonoBehaviour
 
     private void ActualizarAnimator()
     {
-        if (!moviendose && agente.velocity.magnitude >= 0.75f)
+        if (!moviendose && agente.velocity.magnitude >= 0.85f)
         {
             animator.SetBool(caminar, true);
             moviendose = true;
         }
-        else if (moviendose && agente.velocity.magnitude < 0.75f)
+        else if (moviendose && agente.velocity.magnitude < 0.85f)
         {
             animator.SetBool(caminar, false);
             moviendose = false;

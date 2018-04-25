@@ -227,7 +227,6 @@ GameObject:
   - component: {fileID: 130890248}
   - component: {fileID: 130890247}
   - component: {fileID: 130890246}
-  - component: {fileID: 130890250}
   - component: {fileID: 130890251}
   m_Layer: 4
   m_Name: Plane
@@ -304,34 +303,6 @@ Transform:
   m_Father: {fileID: 1529091463}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &130890250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 130890245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967294
-  m_UseGeometry: 1
-  m_DefaultArea: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
-  m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 40a42d22da13df14d8d1ba0da56fab14, type: 2}
 --- !u!114 &130890251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,6 +478,46 @@ Prefab:
       propertyPath: objetivo
       value: 
       objectReference: {fileID: 1812832853}
+    - target: {fileID: 65473300565282298, guid: 6408222b6ee556b45a03ecb580e2cbc3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65005433658471852, guid: 6408222b6ee556b45a03ecb580e2cbc3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65508481465852896, guid: 6408222b6ee556b45a03ecb580e2cbc3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136148451491024410, guid: 6408222b6ee556b45a03ecb580e2cbc3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65718356049292384, guid: 6408222b6ee556b45a03ecb580e2cbc3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65190627842547782, guid: 6408222b6ee556b45a03ecb580e2cbc3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65054105519448806, guid: 6408222b6ee556b45a03ecb580e2cbc3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136666796019921058, guid: 6408222b6ee556b45a03ecb580e2cbc3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6408222b6ee556b45a03ecb580e2cbc3, type: 2}
   m_IsPrefabParent: 0
