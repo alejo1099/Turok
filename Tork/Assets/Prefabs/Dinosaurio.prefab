@@ -1219,6 +1219,7 @@ GameObject:
   - component: {fileID: 114079620683921566}
   - component: {fileID: 114148731053151400}
   - component: {fileID: 114042533120914692}
+  - component: {fileID: 114630930842008746}
   m_Layer: 0
   m_Name: Dinosaurio
   m_TagString: Untagged
@@ -2718,11 +2719,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1881073795425444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdfc13d3fec8488469367442d653df52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetivo: {fileID: 0}
 --- !u!114 &114079620683921566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2734,6 +2736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10704cce9a73ba04e8fdac142dc786ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetivo: {fileID: 0}
   target: {fileID: 4067927404273792}
 --- !u!114 &114148731053151400
 MonoBehaviour:
@@ -2741,11 +2744,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1881073795425444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c7a2529ed6a99443a9b0045aecb7eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetivo: {fileID: 0}
 --- !u!114 &114253308057307338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2757,6 +2761,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b7b1c8374a81f43a3ba6ddb293057b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114630930842008746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1881073795425444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37770cabcaeaa8d459367452270935ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radioOido: 15
 --- !u!114 &114938376366937926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2769,8 +2785,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transOjos: {fileID: 4097547837679768}
-  rangoVision: 0
-  radio: 0
+  rangoVision: 10
+  radio: 4
 --- !u!136 &136032211467169108
 CapsuleCollider:
   m_ObjectHideFlags: 1

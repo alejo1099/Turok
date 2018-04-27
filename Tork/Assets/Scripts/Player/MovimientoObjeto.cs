@@ -14,11 +14,11 @@ namespace Emperor
 
         public float velocidadMovimiento;
         public float velocidadRotacion;
-        public float fuerzaSalto;
+        //public float fuerzaSalto;
         private float guardarvelocidadMovimiento;
         private float x, y;
 
-        private bool saltando;
+        //private bool saltando;
 
         private void Awake()
         {
@@ -40,7 +40,7 @@ namespace Emperor
 
             MovimientoRigidbody();
             RotacionRigidbody();
-            Saltar();
+            //Saltar();
             MoverAnimator();
         }
 
@@ -69,21 +69,21 @@ namespace Emperor
             rigidbodyPlayer.MoveRotation(transformPlayer.rotation * Quaternion.Euler(0f, Input.GetAxis("Mouse X")
             * velocidadRotacion, 0f));
 
+            velocidadRotacion = (transformCamara.localRotation.x <= 0.017f && Input.GetAxis("Mouse Y") > 0.01f)
+             || (transformCamara.localRotation.x >= 0.176f && Input.GetAxis("Mouse Y") < -0.01f) ? 0 : guardarvelocidadMovimiento;
+
             transformCamara.localRotation *= Quaternion.Euler(Input.GetAxis("Mouse Y") * -velocidadRotacion, 0f, 0f);
-
-            velocidadRotacion = (transformCamara.localRotation.x >= 0.15f && Input.GetAxis("Mouse Y") < -0.1f)
-             || (transformCamara.localRotation.x <= -0.09f && Input.GetAxis("Mouse Y") > 0.1f) ? 0 : guardarvelocidadMovimiento;
         }
 
-        private void Saltar()
-        {
-            if (Input.GetKeyDown(KeyCode.Space) && !saltando)
-            {
-                rigidbodyPlayer.AddForce(transformPlayer.up * fuerzaSalto);
-                saltando = true;
-            }
-            if (saltando && Physics.Raycast(transform.position, -transform.up, 0.05f))
-                saltando = false;
-        }
+        // private void Saltar()
+        // {
+        //     if (Input.GetKeyDown(KeyCode.Space) && !saltando)
+        //     {
+        //         rigidbodyPlayer.AddForce(transformPlayer.up * fuerzaSalto);
+        //         saltando = true;
+        //     }
+        //     if (saltando && Physics.Raycast(transform.position, -transform.up, 0.05f))
+        //         saltando = false;
+        // }
     }
 }

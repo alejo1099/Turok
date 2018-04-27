@@ -20,7 +20,7 @@ namespace Turok
 
         //En cualquier estado si ve a un enemigo entonces se girara hacia él , pero es bueno tener una variable de "ver" donde actualice el objetivo si no hay obstaculos, entre los 2
 
-        //Si el jugador golpea al dinosaurio, este gritara, si lo golpea por enfrente, retrocedera un poco,, y luego avanzara corriendo
+        //Si el jugador golpea al dinosaurio, este gritara, si lo golpea por enfrente, retrocedera un poco, y luego avanzara corriendo
         //si lo golpea por atras, gritara y se alejara un poco del jugador, cuando pase cierta distancia, se girara y correra contra el jugador
 
         //Si el dinosaurio pierde al jugador, entonces se quedara un rato dando vueltas, y luego seguira su camino
@@ -54,20 +54,20 @@ namespace Turok
                 case EstadosDinosaurio.Normal:
                     estadoActual.enabled = false;
                     estadoActual = estadoNormal;
-                    estadoActual.enabled = true;
                     estadoActual.objetivo = objetivo;
+                    estadoActual.enabled = true;
                     break;
                 case EstadosDinosaurio.Alerta:
                     estadoActual.enabled = false;
                     estadoActual = estadoAlerta;
-                    estadoActual.enabled = true;
                     estadoActual.objetivo = objetivo;
+                    estadoActual.enabled = true;
                     break;
                 case EstadosDinosaurio.Persecucion:
                     estadoActual.enabled = false;
                     estadoActual = estadoPersecucion;
-                    estadoActual.enabled = true;
                     estadoActual.objetivo = objetivo;
+                    estadoActual.enabled = true;
                     break;
             }
         }
