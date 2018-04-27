@@ -6,7 +6,7 @@ namespace Emperor
     public class MovimientoObjeto : MonoBehaviour
     {
         private ControladorAnimaciones controladorAnimaciones;
-        private Vector3 desplazamientoJugador;
+        public Vector3 desplazamientoJugador;
 
         private Transform transformPlayer;
         private Transform transformCamara;

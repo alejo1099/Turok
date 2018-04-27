@@ -13,10 +13,11 @@ public class NavMeshSourceTag : MonoBehaviour
 
     void OnEnable()
     {
-        var m = GetComponent<MeshFilter>();
+        var m = GetComponentsInChildren<MeshFilter>();
         if (m != null)
         {
-            m_Meshes.Add(m);
+            for (int i = 0; i < m.Length; i++)
+                m_Meshes.Add(m[i]);
         }
 
         var t = GetComponent<Terrain>();
@@ -28,10 +29,11 @@ public class NavMeshSourceTag : MonoBehaviour
 
     void OnDisable()
     {
-        var m = GetComponent<MeshFilter>();
+        var m = GetComponentsInChildren<MeshFilter>();
         if (m != null)
         {
-            m_Meshes.Remove(m);
+            for (int i = 0; i < m.Length; i++)
+                m_Meshes.Remove(m[i]);
         }
 
         var t = GetComponent<Terrain>();

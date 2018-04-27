@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4293170042223558}
   - component: {fileID: 135556012450448526}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CollisionObject4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 33920211118002266}
   - component: {fileID: 23911040243496554}
   - component: {fileID: 193262402558401022}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Conifer_Desktop_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4151218168190184}
   - component: {fileID: 136196485925531640}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CollisionObject0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,8 @@ GameObject:
   - component: {fileID: 4669887461088604}
   - component: {fileID: 205788235770885422}
   - component: {fileID: 54299862662890276}
-  m_Layer: 0
+  - component: {fileID: 114187729533360406}
+  m_Layer: 4
   m_Name: Conifer_Desktop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4267234330705876}
   - component: {fileID: 135702702318784428}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CollisionObject1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4696210768523344}
   - component: {fileID: 135373390300672732}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CollisionObject7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +122,7 @@ GameObject:
   - component: {fileID: 33922977183678664}
   - component: {fileID: 23299022658200530}
   - component: {fileID: 193782604100500770}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Conifer_Desktop_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4925775938329050}
   - component: {fileID: 135893150717446142}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CollisionObject3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4230712341336832}
   - component: {fileID: 135078844696715660}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CollisionObject2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +171,7 @@ GameObject:
   - component: {fileID: 4443131338004026}
   - component: {fileID: 227487364470660824}
   - component: {fileID: 193477057010535070}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Conifer_Desktop_Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +189,7 @@ GameObject:
   - component: {fileID: 33948783460494700}
   - component: {fileID: 23279171524502282}
   - component: {fileID: 193533286682322238}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Conifer_Desktop_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4236481806199166}
   - component: {fileID: 135966818032564232}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CollisionObject6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4864793172346740}
   - component: {fileID: 135761316401155368}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CollisionObject5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,8 +338,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1089544162463184}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.48, y: -2.1612454e-17, z: 6.71}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.48, y: 0, z: 6.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4151218168190184}
@@ -554,6 +555,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114187729533360406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1089544162463184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e038bf700cfa444fb16c6ef963be9f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135078844696715660
 SphereCollider:
   m_ObjectHideFlags: 1
